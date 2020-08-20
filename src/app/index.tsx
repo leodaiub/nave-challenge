@@ -1,19 +1,13 @@
-/**
- *
- * App
- *
- * This component is the skeleton around the actual pages, and should only
- * contain code that should be seen on all pages. (e.g. navigation bar)
- */
-
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import { GlobalStyle } from '../styles/global-styles';
+import { GlobalStyle } from 'styles/global-styles';
 
-import { HomePage } from './containers/HomePage/Loadable';
-import { NotFoundPage } from './containers/NotFoundPage/Loadable';
+import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { Auth } from './containers/Auth';
+import { PrivateRoute } from './components/PrivateRoute';
+import { Navers } from './containers/Navers/Loadable';
 
 export function App() {
   return (
@@ -26,7 +20,9 @@ export function App() {
       </Helmet>
 
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+        <Route exact path="/" component={Auth} />
+        <PrivateRoute exact path="/navers" component={Navers} />
+        <PrivateRoute exact path="/navers/edit/:id" component={Navers} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
