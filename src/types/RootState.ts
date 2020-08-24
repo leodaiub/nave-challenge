@@ -12,5 +12,7 @@ export interface RootState {
   theme?: ThemeState;
   auth?: AuthState;
   navers?: NaversState;
+  modal?: any;
+  router?: any;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }

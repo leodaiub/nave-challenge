@@ -1,11 +1,9 @@
 import axios from 'axios';
-import i18next from 'i18next';
-
-const api = axios.create({ baseURL: process.env.REACT_APP_API_URL });
+const api = axios.create({ baseURL: 'https://navedex-api.herokuapp.com/v1' });
 
 api.interceptors.request.use(config => {
   if (localStorage.getItem('token'))
-    config.headers.auth = `${localStorage.token}`;
+    config.headers.Authorization = `Bearer ${localStorage.token}`;
 
   return config;
 });

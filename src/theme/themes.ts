@@ -5,6 +5,7 @@ import overrides from './overrides';
 const lightTheme = {
   palette: {
     ...palette,
+
     type: 'light',
   },
   typography,
@@ -18,6 +19,12 @@ const lightTheme = {
 const darkTheme: Theme = {
   palette: {
     ...palette,
+    primary: {
+      main: '#FFFFFF',
+    },
+    secondary: {
+      main: '#212121',
+    },
     type: 'dark',
   },
   typography,
