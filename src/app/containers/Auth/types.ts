@@ -1,4 +1,8 @@
 /* --- STATE --- */
-export interface AuthState {}
+export interface AuthState {
+  authenticated: boolean;
+  loading: boolean;
+  error: boolean;
+}
 
 export type ContainerState = AuthState;
