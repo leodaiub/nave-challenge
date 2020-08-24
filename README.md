@@ -28,11 +28,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://raw.githubusercontent.com/leodaiub/nave-challenge/master/public/Captura%20de%20Tela_%C3%81rea%20de%20Sele%C3%A7%C3%A3o_20200824173951.png)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`leodaiub`, `nave-challenge`, , `leodaiub@gmail.com`
+
 
 
 ### Built With
