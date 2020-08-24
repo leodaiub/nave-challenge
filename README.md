@@ -35,11 +35,11 @@
 
 ### Built With
 
-* []()
-* []()
-* []()
-
-
+* [ReactJS]()
+* [Redux, Redux Saga, Redux Toolkit]()
+* [Material-UI]()
+* [i18n]()
+* [TypeScript]()
 
 <!-- GETTING STARTED -->
 ## Getting Started
